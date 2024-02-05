@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            left: -200px;
+        }
+    </style>
+</head>
+<body>
+    <button>Click</button>
+    <div class="box">
+        <button class="bt">Click</button>
+    </div>
+    <a href="https://wa.me/6379947616">Whatsapp</a>
+    <a href="mailto:dravidparthiban14@gmail.com">Mail</a>
+
+
+    <script>
+        let button = document.getElementsByTagName("button")[0];
+        let box = document.querySelector(".box")
+        let bt = document.querySelector(".bt")
+
+        button.addEventListener("click",()=>{
+            box.style.left="100px"
+        })
+        bt.addEventListener("click",()=>{
+            box.style.left="-200px"
+        })
+    </script>
+    
+</body>
+</html>
