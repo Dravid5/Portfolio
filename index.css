@@ -171,7 +171,7 @@ body{
     margin: 80px 0px;
 }
 .projectgrid{
-    width: 85%;
+    width: 90%;
     margin: auto;
 }
 .projecttitle{
@@ -418,4 +418,170 @@ section{
 .cv img{
     width: 70px;
     padding-top: 30px;
+}
+.projectbox img{
+    height: 198px;
+    width: 100%;
+    object-fit: contain;
+}
+.projectbox{
+    border: 1px solid black;
+  outline-style: solid;
+  outline-color: rgb(51, 51, 51);
+  outline-width: thin;
+}
+.fristrow{
+    display: flex;
+    gap: 45px;
+}
+.description h4{
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: 'Outfit', sans-serif;
+    background: linear-gradient(to right, #DF267D, #702C8F);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.description {
+    padding: 30px 40px;
+}
+.projecttools img {
+    height: 22px;
+    width: 22px;
+    border-radius: 0px;
+}
+.codeview{
+    display: flex;
+    gap: 71px;
+    margin-bottom: 10px;
+}
+.projecttools {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+.projecttools h6 {
+    width: fit-content;
+    padding: 0px 7px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+.description p{
+    font-size: 14px;
+    color: #a8a7a7;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    font-family: 'Poppins', sans-serif;
+}
+.codeview a{
+    color: rgb(220, 217, 217);
+    font-family: 'Poppins', sans-serif;
+}
+.secondrow,.thirdrow{
+    margin-top: 80px;
+}
+.thirdrow{
+    width: 423px;
+}
+
+
+
+@media screen and (max-width:500px){
+    .socials, .fristrow, .buttonflex,.slogos{
+        display: block;
+    }
+    .circle{
+        padding-left: 0%;
+        padding-top: 0%;
+    }
+    .socials {
+        margin-right: 5px;
+    }
+    .socials{
+        margin-left: 25px;
+    }
+    .contact h1 {
+        font-size: 46px;
+    }
+    .adjustment h2 {
+        font-size: 21px;
+    }
+    .moreleft {
+        padding-left: 17px;
+    }
+    .adjustment p{
+        font-size: 12px;
+    }
+    .s1fonts {
+        font-size: 20px;
+    }
+    .fullfont {
+        font-size: 25px;
+    }
+    .linkdin, .github ,.mail{
+        padding-top: 14px;
+    }
+    .wd {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .linkdin img, .github img ,.mail img{
+        width: 30px;
+    }
+    .name h1 {
+        font-size: 33px;
+    }
+    .name img {
+        width: 28px;
+        margin-top: 6px;
+    }
+    .brief p {
+        font-size: 12px;
+    }
+    .circle {
+        display: none;
+    }
+    .s1 {
+        margin-right: 10px;
+    }
+    .top {
+        gap: 50px;
+    }
+    .cv img {
+        width: 50px;
+        padding-top: 8px;
+    }
+    
+}
+
+
+
+@media screen and (min-width:700px) and (max-width:850px){
+
+    .fristrow,.inputflex,.slogos{
+        display: block;
+    }
+    .thirdrow{
+        width: 100%;
+    }
+    .form textarea {
+        padding: 30px 288px 117px 50px;
+    }
+    .circle {
+        display: none;
+    }
+    .top {
+        gap: 80px;
+    }
+    .cv img {
+        width: 50px;
+        padding-top: 8px;
+    }
+    .linkdin, .github ,.mail{
+        padding-top: 34px;
+    }
 }
